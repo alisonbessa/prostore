@@ -9,3 +9,8 @@ export function cn(...inputs: ClassValue[]) {
 export function prismaToObject<T>(obj: T): T {
   return JSON.parse(JSON.stringify(obj));
 }
+
+// Format number with decimal places
+export function formatNumberWithDecimal(num: number, decimal = 2) {
+  return num.toFixed(decimal).toString();
+}
